@@ -256,8 +256,8 @@ button {
 
 .header {
      width: 100%;
-     height: 86px;
-     padding: 24px 60px;
+     height: 78px;
+     padding: 16px 42px;
      background: #f8f7f2;
 }
 
@@ -270,10 +270,10 @@ button {
      position: absolute;
      content: "";
      background-color: #f8f7f2;
-     width: 350px;
-     height: 86px;
-     left: -75px;
-     top: -24px;
+     width: 245px;
+     height: 78px;
+     left: -42px;
+     top: -16px;
 }
 
 
@@ -395,6 +395,11 @@ ul.social_icon li a:hover {
 .bann_img {
      padding-left: 59px;
      padding-right: 20px;
+     width: 100%;
+     max-height: 520px;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 0 70px 0 0;
 }
 
 #myCarousel .carousel-control-prev,
@@ -1007,8 +1012,8 @@ ul.link_menu li a:hover {
      position: relative;
      z-index: 1;
      display: block;
-     width: 250px;
-     height: 58px;
+     width: 155px;
+     height: 46px;
 }
 
 .brand-logo img {

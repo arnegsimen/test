@@ -200,11 +200,11 @@
         float: left;
     }
     .logo::before {
-        width: 310px;
+        width: 220px;
     }
     .brand-logo {
-        width: 205px;
-        height: 58px;
+        width: 145px;
+        height: 46px;
     }
     .header {
         padding: 24px 0px;
