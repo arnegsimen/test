@@ -258,7 +258,7 @@ button {
      width: 100%;
      height: 76px;
      padding: 8px 42px;
-     background: #f8f7f2;
+     background: #435a32;
 }
 
 .header > .container-fluid,
@@ -560,7 +560,6 @@ ul.social_icon li a:hover {
      position: absolute;
      content: "";
      bottom: 0%;
-     background: url(../images/slin.png);
      background-repeat: no-repeat;
      max-width: 820px;
      height: 147px;
@@ -637,7 +636,6 @@ ul.social_icon li a:hover {
      position: absolute;
      content: "";
      bottom: 0%;
-     background: url(../images/slin2.png);
      background-repeat: no-repeat;
      max-width: 820px;
      height: 147px;
@@ -1147,9 +1145,6 @@ ul.link_menu li a:hover {
      background: #f6f3ea;
 }
 
-.about_section + .about_section {
-     border-top: 5px solid #6f8749;
-}
 
 .about_copy {
      max-width: 560px;
@@ -1184,16 +1179,19 @@ ul.link_menu li a:hover {
 }
 
 .about_map {
-     height: 360px;
-     overflow: hidden;
-     border: 10px solid #6f8749;
-     box-shadow: 0 18px 45px rgba(0, 0, 0, .16);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid #6f8749;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .16);
+    box-sizing: border-box;
 }
 
 .about_map iframe {
-     width: 100%;
-     height: 100%;
-     border: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .about_art,
@@ -1221,47 +1219,58 @@ ul.link_menu li a:hover {
 }
 
 @media (min-width: 768px) {
-     .about-page .about_location .row,
-     .about-page .about_elin .row {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 30px;
-          margin-left: 0;
-          margin-right: 0;
-          align-items: stretch;
-     }
+    .about-page .about_location .row,
+    .about-page .about_elin .row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: stretch;
+    }
 
-     .about-page .about_location .col-md-6,
-     .about-page .about_elin .col-md-6 {
-          display: flex;
-          width: auto;
-          max-width: none;
-          padding-left: 0;
-          padding-right: 0;
-     }
+    .about-page .about_location .col-md-6,
+    .about-page .about_elin .col-md-6 {
+        display: flex;
+        width: auto;
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-     .about-page .about_location .about_copy,
-     .about-page .about_elin .about_copy,
-     .about-page .about_map,
-     .about-page .elin_portrait {
-          width: 100%;
-          height: 100% !important;
-          min-height: 0;
-          align-self: stretch;
-     }
+    .about-page .about_location .about_copy,
+    .about-page .about_elin .about_copy {
+        width: 100%;
+    }
 
-     .about-page .about_map,
-     .about-page .elin_portrait {
-          display: flex;
-     }
+    /* MAP */
+    .about-page .about_map {
+        width: 100%;
+        height: 100% !important;
+        min-height: 520px;
+        align-self: flex-start;
+        display: flex;
+    }
 
-     .about-page .about_map iframe,
-     .about-page .elin_portrait img {
-          flex: 1 1 100%;
-          width: 100%;
-          height: 100% !important;
-          min-height: 0;
-     }
+    .about-page .about_map iframe {
+        display: block;
+        width: 100%;
+        height: 520px !important;
+        min-height: 0;
+        border: 0;
+    }
+
+    /* ELIN IMAGE */
+    .about-page .elin_portrait {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .about-page .elin_portrait img {
+        width: 100%;
+        height: 100% !important;
+        min-height: 0;
+    }
 }
 
 .about-page .back_re {
@@ -1703,3 +1712,24 @@ h6,
      -webkit-text-fill-color: var(--ink) !important;
      filter: none !important;
 }
+
+.back_re {
+    background: #435a32 !important;
+    background-color: #435a32 !important;
+}
+
+.back_re .title h2 {
+    color: #ffffff;
+}
+
+.we_do,
+.pricing,
+.contact {
+    background: #ffffff !important;
+}
+
+.about_location,
+.about_elin {
+    background: #ffffff !important;
+}
+

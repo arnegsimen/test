@@ -253,7 +253,7 @@
         font-size: 32px;
     }
     .about_map {
-        height: 280px;
+        height: 520px;
     }
     .about_art img,
     .elin_portrait img {
@@ -403,3 +403,4 @@
         display: none;
     }
 }
+
