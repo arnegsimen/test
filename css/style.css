@@ -256,9 +256,18 @@ button {
 
 .header {
      width: 100%;
-     height: 116px;
-     padding: 18px 42px;
+     height: 76px;
+     padding: 8px 42px;
      background: #f8f7f2;
+}
+
+.header > .container-fluid,
+.header > .container-fluid > .row {
+     height: 100%;
+}
+
+.header > .container-fluid > .row {
+     align-items: center;
 }
 
 .logo a img {
@@ -276,6 +285,8 @@ button {
 .navigation.navbar {
      float: right;
      padding: 0;
+     display: flex;
+     align-items: center;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
@@ -351,6 +362,43 @@ ul.social_icon li a:hover {
 
 .banner_main {
      background: #435a32;
+}
+
+.static_hero {
+     min-height: 430px;
+     display: flex;
+     align-items: center;
+     background: var(--moss);
+}
+
+.static_hero_content {
+     display: flex;
+     align-items: center;
+     gap: 64px;
+     max-width: 980px;
+     margin: 0 auto;
+     padding: 86px 0;
+}
+
+.hero-logo {
+     flex: 0 0 300px;
+     width: 300px;
+     height: 300px;
+     object-fit: contain;
+}
+
+.static_hero_content h1 {
+     margin-bottom: 22px;
+     color: #fffdf8;
+     font-size: clamp(42px, 6vw, 76px);
+     line-height: 1.05;
+}
+
+.static_hero_content p {
+     max-width: 620px;
+     color: #fffdf8;
+     font-size: 20px;
+     line-height: 32px;
 }
 
 #myCarousel,
@@ -465,7 +513,7 @@ ul.social_icon li a:hover {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #f6f3ea;
+     color: #435a32;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -611,7 +659,7 @@ ul.social_icon li a:hover {
      font-size: 17px;
      line-height: 28px;
      padding-bottom: 40px;
-     color: #dce7d8;
+     color: #435a32;
 }
 
 .about_img {
@@ -822,7 +870,7 @@ ul.social_icon li a:hover {
      padding: 34px 36px;
      text-align: center;
      background: #f8f7f2;
-     border-top: 3px solid #aebd70;
+     border-top: 3px solid #435a32;
      box-shadow: 0 16px 35px rgba(37, 53, 47, .08);
 }
 
@@ -1081,6 +1129,7 @@ ul.link_menu li a:hover {
 
 .back_re .title {
      text-align: center;
+     color: 435a32;
 }
 
 .back_re .title h2 {
@@ -1169,6 +1218,50 @@ ul.link_menu li a:hover {
 
 .elin_portrait img {
      object-position: center top;
+}
+
+@media (min-width: 768px) {
+     .about-page .about_location .row,
+     .about-page .about_elin .row {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 30px;
+          margin-left: 0;
+          margin-right: 0;
+          align-items: stretch;
+     }
+
+     .about-page .about_location .col-md-6,
+     .about-page .about_elin .col-md-6 {
+          display: flex;
+          width: auto;
+          max-width: none;
+          padding-left: 0;
+          padding-right: 0;
+     }
+
+     .about-page .about_location .about_copy,
+     .about-page .about_elin .about_copy,
+     .about-page .about_map,
+     .about-page .elin_portrait {
+          width: 100%;
+          height: 100% !important;
+          min-height: 0;
+          align-self: stretch;
+     }
+
+     .about-page .about_map,
+     .about-page .elin_portrait {
+          display: flex;
+     }
+
+     .about-page .about_map iframe,
+     .about-page .elin_portrait img {
+          flex: 1 1 100%;
+          width: 100%;
+          height: 100% !important;
+          min-height: 0;
+     }
 }
 
 .about-page .back_re {
@@ -1440,7 +1533,7 @@ ul.conta li a,
      margin: 0;
      overflow: hidden;
      border: 8px solid var(--moss);
-     background: #fffdf8;
+     background: var(--page);
      box-shadow: 0 18px 45px rgba(0, 0, 0, .12);
 }
 
@@ -1448,10 +1541,165 @@ ul.conta li a,
      display: block;
      width: 100%;
      height: 100%;
-     object-fit: cover;
+     object-fit: contain;
+     object-position: center;
      transition: transform .5s ease;
 }
 
 .studio_gallery figure:hover img {
      transform: scale(1.05);
+}
+
+.studio_carousel {
+     overflow: visible;
+     border: 0;
+     padding-bottom: 32px;
+     background: var(--page);
+     box-shadow: 0 18px 45px rgba(0, 0, 0, .12);
+}
+
+.studio_carousel .carousel-item {
+     height: 445px;
+     background: var(--page);
+}
+
+.studio_carousel .carousel-item img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+     object-position: center;
+}
+
+.studio_carousel .carousel-indicators {
+     z-index: 2;
+     display: flex;
+     bottom: 3px;
+}
+
+.studio_carousel .carousel-indicators li {
+     width: 9px;
+     height: 9px;
+     margin: 0 5px;
+     border-radius: 50%;
+     background: var(--moss-light);
+}
+
+.studio_carousel .carousel-indicators li.active {
+     background: var(--moss);
+}
+
+.studio_carousel .carousel-control-prev,
+.studio_carousel .carousel-control-next {
+     z-index: 3;
+     width: 42px;
+     height: 42px;
+     top: 50%;
+     transform: translateY(-50%);
+     margin: 0 12px;
+     border-radius: 50%;
+     background: var(--moss);
+     opacity: .92;
+}
+
+/* Keep the static home hero dark moss green after the legacy theme rules. */
+.banner_main.static_hero,
+.banner_main.static_hero::before {
+     background: #435a32 !important;
+     background-color: #435a32 !important;
+}
+
+.banner_main.static_hero::before {
+     display: none;
+}
+
+/* One moss green for the complete brand system. */
+:root {
+     --moss: #435a32;
+     --moss-light: #435a32;
+     --moss-pale: #435a32;
+     --moss-ink: #435a32;
+     --ink: #435a32;
+}
+
+body,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.relative p,
+.relative h1,
+.titlepage h2,
+.we_box h3,
+.we_box p,
+.about_copy h2,
+.about_copy p,
+.our_pricing span,
+.our_pricing p,
+.experts .experts_box .meet h3,
+.experts .experts_box .meet p,
+.contact_intro a,
+.contact_intro .contact_address,
+.variat,
+.bottom_form p,
+.copyright p,
+.copyright a,
+.navigation.navbar-dark .navbar-nav .nav-link,
+.section_kicker,
+.contact_intro i,
+.pricing_box_ti h3 span {
+     color: #435a32;
+}
+
+.we_box i,
+.pricing_box,
+.about_map,
+.about_art,
+.elin_portrait,
+.about_copy,
+.about_section + .about_section,
+.about-page .back_re,
+.about-page .about_section:last-of-type,
+.studio_gallery,
+.studio_gallery figure {
+     border-color: #435a32;
+}
+
+.service_icon,
+.treatment-grid .service_icon {
+     color: #435a32 !important;
+     -webkit-text-fill-color: #435a32 !important;
+     filter: none !important;
+}
+
+.about-page .about_studio .studio_gallery {
+     display: grid !important;
+     visibility: visible !important;
+     opacity: 1 !important;
+}
+
+.about-page .about_studio .studio_gallery figure,
+.about-page .about_studio .studio_gallery img {
+     display: block !important;
+     visibility: visible !important;
+     opacity: 1 !important;
+}
+
+.about-page .about_studio .studio_gallery img {
+     max-width: none;
+}
+
+.about-page .about_map,
+.about-page .elin_portrait {
+     border: 0;
+}
+
+.treatment-grid .service_icon {
+     color: var(--ink) !important;
+     -webkit-text-fill-color: var(--ink) !important;
+     filter: none !important;
 }

@@ -44,7 +44,7 @@
          <div class="header">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="logo_section d-none">
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
@@ -53,7 +53,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-8 col-lg-7 col-md-9 col-sm-9">
+                  <div class="col-xl-10 col-lg-9 col-md-10 col-sm-10">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -82,8 +82,6 @@
                   <div class="col-md-2">
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
@@ -132,11 +130,31 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-7">
-                  <div class="studio_gallery">
-                     <figure><img src="images/studio1.jpg" alt="Massasjestudioet med behandlingsbenk"/></figure>
-                     <figure><img src="images/studio2.jpg" alt="Kunst på veggen i massasjestudioet"/></figure>
-                     <figure><img src="images/studio3.jpg" alt="Sitteområde i massasjestudioet"/></figure>
-                     <figure><img src="images/studio4.jpg" alt="Detalj fra massasjestudioet"/></figure>
+                  <div id="studioCarousel" class="carousel slide studio_carousel" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#studioCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#studioCarousel" data-slide-to="1"></li>
+                        <li data-target="#studioCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="./images/studio1.jpg" alt="Massasjestudioet med behandlingsbenk"/>
+                        </div>
+                        <div class="carousel-item">
+                           <img src="./images/studio2.jpg" alt="Kunst på veggen i massasjestudioet"/>
+                        </div>
+                        <div class="carousel-item">
+                           <img src="./images/studio4.jpg" alt="Detalj fra massasjestudioet"/>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#studioCarousel" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Forrige</span>
+                     </a>
+                     <a class="carousel-control-next" href="#studioCarousel" role="button" data-slide="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Neste</span>
+                     </a>
                   </div>
                </div>
                <div class="col-md-5">
@@ -161,6 +179,7 @@
                      <h2>Faglighet med et varmt blikk</h2>
                      <p>Elin Arnegard-Tveiten møter hver klient med ro, nysgjerrighet og respekt for at alle kropper er forskjellige. Hun bruker massasje og manuelle teknikker for å hjelpe deg med spenninger, bevegelse og restitusjon.</p>
                      <p>Behandlingen formes i dialog med deg, med fokus på trygghet, gode forklaringer og det som faktisk kan være nyttig for kroppen din.</p>
+                     <p>Elin har bakgrunn som hjelpepleier, med videreutdanning innen habilitering, rehabilitering og kommunale helsetjenester. Massasjeutdanningen hennes startet med en østlig filosofi, før ønsket om større faglig tyngde førte henne videre til NOMAS Massasjeskole, en skole anbefalt av Norges Massasjeforbund. Hun er i dag under videreutdanning til massasjeterapeut og er også utdannet yogalærer innen Yin Yoga og Kundalini Yoga.</p>
                   </div>
                </div>
                <div class="col-md-6">
@@ -184,7 +203,7 @@
                         <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:elinarnegar@yahoo.no"> elinarnegar@yahoo.no</a></li>
                      </ul>
                   </div>
-                  <div class=" col-md-3 col-sm-6">
+                  <div class=" col-md-4 col-sm-6">
                      <h3>Om oss</h3>
                      <p class="variat">Et lite og hyggelig studio for massasje, hvile og ny kontakt med kroppen.</p>
                   </div>
@@ -192,7 +211,7 @@
                      <h3>Mulighetsrommet Muskler &amp; Ledd</h3>
                      <p class="variat" >Kom inn for faglig, uforstyrret kroppsbehandling og gå herfra med litt mer bevegelsesfrihet.</p>
                   </div>
-                  <div class="col-md-2 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <h3>Nyttige lenker</h3>
                      <ul class="link_menu">
                         <li><a href="index.html">Hjem</a></li>
@@ -201,14 +220,6 @@
                         <li><a href="pricing.html">Priser</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                      </ul>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h3>Nyhetsbrev</h3>
-                     <form class="bottom_form">
-                        <a class="right_btn" href="Javascript:void(0)"> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                        <input class="enter" placeholder="Skriv inn e-postadressen din" type="email" name="E-postadresse">
-                        <p >Nyheter fra studioet, tips for restitusjon og oppdateringer om timer.</p>
-                     </form>
                   </div>
                </div>
             </div>
