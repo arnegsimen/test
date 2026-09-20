@@ -200,7 +200,11 @@
         float: left;
     }
     .logo::before {
-        width: 292px;
+        width: 310px;
+    }
+    .brand-logo {
+        width: 205px;
+        height: 58px;
     }
     .header {
         padding: 24px 0px;
@@ -239,7 +243,7 @@
         font-size: 32px;
     }
     .pricing_box {
-        padding: 74px 40px 80px 40px;
+        padding: 58px 18px 70px 18px;
     }
     .about_img {
         margin-right: 0px;
