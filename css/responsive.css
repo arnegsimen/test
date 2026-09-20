@@ -209,8 +209,8 @@
         display: none;
     }
     .brand-logo {
-        width: 155px;
-        height: 52px;
+        width: 220px;
+        height: 68px;
     }
     .brand-logo img {
         width: 100%;
@@ -219,7 +219,8 @@
         object-position: left center;
     }
     .header {
-        padding: 24px 0px;
+        height: 94px;
+        padding: 13px 0px;
     }
     ul.social_icon li a {
         display: none;
