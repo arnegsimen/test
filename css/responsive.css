@@ -206,11 +206,11 @@
         float: left;
     }
     .logo::before {
-        width: 220px;
+        display: none;
     }
     .brand-logo {
-        width: 165px;
-        height: 50px;
+        width: 155px;
+        height: 52px;
     }
     .brand-logo img {
         width: 100%;
