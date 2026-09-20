@@ -1733,3 +1733,27 @@ h6,
     background: #ffffff !important;
 }
 
+.pricing .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.pricing .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing_box {
+    height: 100%;
+}
+
+.about_studio .studio_carousel,
+.about_studio .about_copy {
+    background: #ffffff !important;
+}
+
+.about_studio .studio_carousel,
+.about_studio .studio_carousel .carousel-inner,
+.about_studio .studio_carousel .carousel-item {
+    background: #ffffff !important;
+}
