@@ -31,6 +31,9 @@
         line-height: 60px;
     }
     .bann_img {
+        height: 360px;
+    }
+    .bann_img {
         padding-left: 15px;
     }
     .banner_main::before {
@@ -68,6 +71,9 @@
     .relative h1 {
         font-size: 43px;
         line-height: 46px;
+    }
+    .bann_img {
+        height: 330px;
     }
     .bann_img {
         padding-left: 0px;
@@ -203,8 +209,13 @@
         width: 220px;
     }
     .brand-logo {
-        width: 145px;
-        height: 46px;
+        width: 165px;
+        height: 50px;
+    }
+    .brand-logo img {
+        width: 165px;
+        height: 165px;
+        transform: translateY(-54px);
     }
     .header {
         padding: 24px 0px;
@@ -214,6 +225,8 @@
     }
     .bann_img {
         padding-left: 0;
+        height: 300px;
+        border-radius: 0 36px 0 0;
     }
     .banner_main::before {
         width: 217px;
