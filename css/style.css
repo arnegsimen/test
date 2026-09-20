@@ -47,7 +47,7 @@ body {
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
-     background: #173b2f;
+     background: #0d2b21;
 }
 
 a {
@@ -337,7 +337,7 @@ ul.social_icon li a:hover {
 .banner_main::before {
      position: absolute;
      content: "";
-     background-color: #2e2d2d;
+     background-color: #0d2b21;
      width: 170px;
      height: 560px;
      left: 0;
@@ -346,7 +346,17 @@ ul.social_icon li a:hover {
 .banner1 {
      position: relative;
      padding: 28px 0 70px 0;
-     background: #173b2f;
+     background: #fff;
+}
+
+.banner_main {
+     background: #0d2b21;
+}
+
+#myCarousel,
+#myCarousel .carousel-inner,
+#myCarousel .carousel-item {
+     background: #fff;
 }
 
 .relative {
@@ -364,18 +374,18 @@ ul.social_icon li a:hover {
      font-size: 64px;
      line-height: 1.08;
      font-weight: 500;
-     color: #f6f3ea;
+     color: #0d2b21;
 }
 
 .relative p {
-     color: #dce7d8;
+     color: #405047;
      max-width: 500px;
      padding-bottom: 42px;
 }
 
 .get_btn {
-     background-color: #b9c77a;
-     color: #173b2f;
+     background-color: #0d2b21;
+     color: #fff;
      text-align: center;
      max-width: 216px;
      width: 100%;
@@ -403,7 +413,7 @@ ul.social_icon li a:hover {
 #myCarousel .carousel-control-next {
      width: 55px;
      height: 55px;
-     background: #2e2d2d;
+     background: #0d2b21;
      opacity: 1;
      font-size: 20px;
      color: #ffffff;
@@ -415,7 +425,7 @@ ul.social_icon li a:hover {
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-next:focus {
      background: #ececec;
-     color: #2e2d2d;
+     color: #0d2b21;
 }
 
 #myCarousel .carousel-control-prev {
