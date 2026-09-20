@@ -42,12 +42,12 @@ html {
 }
 
 body {
-     color: #4f514b;
+     color: #f6f3ea;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
-     background: #dfe8d5;
+     background: #173b2f;
 }
 
 a {
@@ -346,7 +346,7 @@ ul.social_icon li a:hover {
 .banner1 {
      position: relative;
      padding: 28px 0 70px 0;
-     background: #dfe8d5;
+     background: #173b2f;
 }
 
 .relative {
@@ -364,18 +364,18 @@ ul.social_icon li a:hover {
      font-size: 64px;
      line-height: 1.08;
      font-weight: 500;
-     color: #2e2d2d;
+     color: #f6f3ea;
 }
 
 .relative p {
-     color: #2e2d2d;
+     color: #dce7d8;
      max-width: 500px;
      padding-bottom: 42px;
 }
 
 .get_btn {
-     background-color: #2e2d2d;
-     color: #fff;
+     background-color: #b9c77a;
+     color: #173b2f;
      text-align: center;
      max-width: 216px;
      width: 100%;
@@ -448,7 +448,7 @@ ul.social_icon li a:hover {
 
 .titlepage h2 {
      font-size: 45px;
-     color: #2e2d2d;
+     color: #f6f3ea;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -510,7 +510,7 @@ ul.social_icon li a:hover {
 
 .we_box i {
      border-radius: 50%;
-     border: #404040 solid 1px;
+     border: rgba(246, 243, 234, .55) solid 1px;
      width: 210px;
      height: 210px;
      display: flex;
@@ -525,8 +525,12 @@ ul.social_icon li a:hover {
      font-weight: bold;
      line-height: 25px;
      padding-bottom: 5px;
-     color: #2e2d2d;
+     color: #f6f3ea;
      padding-top: 30px;
+}
+
+.we_box p {
+     color: #dce7d8;
 }
 
 
@@ -568,6 +572,7 @@ ul.social_icon li a:hover {
      font-size: 17px;
      line-height: 28px;
      padding-bottom: 40px;
+     color: #dce7d8;
 }
 
 .about_img {
@@ -602,6 +607,7 @@ ul.social_icon li a:hover {
 }
 
 .pricing_box {
+     background: #f6f3ea;
      border: #727272 solid 1px;
      padding: 58px 24px 70px 24px;
 }
@@ -653,13 +659,14 @@ ul.social_icon li a:hover {
      font-weight: bold;
      line-height: 24px;
      padding-bottom: 20px;
-     color: #2e2d2d;
+     color: #173b2f;
      padding-top: 30px;
      display: block;
 }
 
 .our_pricing p {
      line-height: 28px;
+     color: #405047;
 }
 
 .mar_top {
@@ -723,7 +730,7 @@ ul.social_icon li a:hover {
 }
 
 .experts .experts_box .meet h3 {
-     color: #343434;
+     color: #173b2f;
      font-size: 25px;
      line-height: 20px;
      padding-bottom: 12px;
@@ -736,6 +743,7 @@ ul.social_icon li a:hover {
 .experts .experts_box .meet p {
      font-size: 17px;
      line-height: 28px;
+     color: #405047;
 }
 
 .exper {
