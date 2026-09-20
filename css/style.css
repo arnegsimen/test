@@ -1024,5 +1024,7 @@ ul.link_menu li a:hover {
 
 .service_icon {
      color: #b87955;
-     font-size: 56px;
+     display: block;
+     font-size: 82px !important;
+     line-height: 1;
 }
