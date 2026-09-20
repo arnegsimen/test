@@ -998,3 +998,31 @@ ul.link_menu li a:hover {
 .margin_0 {
      margin: 0 !important;
 }
+
+.brand-name {
+     position: relative;
+     z-index: 1;
+     display: block;
+     color: #fff;
+     font-family: 'Raleway', sans-serif;
+     font-size: 25px;
+     font-weight: 700;
+     line-height: 38px;
+     letter-spacing: .5px;
+     white-space: nowrap;
+}
+
+.brand-name span {
+     display: block;
+     color: #d6b47c;
+     font-size: 10px;
+     font-weight: 600;
+     line-height: 10px;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+}
+
+.service_icon {
+     color: #b87955;
+     font-size: 56px;
+}
