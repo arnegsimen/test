@@ -768,6 +768,48 @@ ul.social_icon li a:hover {
      top: 14%;
 }
 
+.contact_intro {
+     max-width: 520px;
+     margin: 0 auto 55px;
+     padding: 34px 36px;
+     text-align: center;
+     background: #f8f7f2;
+     border-top: 3px solid #b9c77a;
+     box-shadow: 0 16px 35px rgba(37, 53, 47, .08);
+}
+
+.contact_intro > p:first-child {
+     margin-bottom: 22px;
+     color: #25352f;
+     font-size: 20px;
+     line-height: 30px;
+}
+
+.contact_intro a {
+     display: block;
+     margin: 10px 0;
+     color: #25352f;
+     font-size: 18px;
+     font-weight: 600;
+}
+
+.contact_intro a:hover {
+     color: #b87955;
+}
+
+.contact_intro i {
+     width: 24px;
+     margin-right: 6px;
+     color: #b87955;
+}
+
+.contact_intro .contact_address {
+     margin-top: 24px;
+     color: #62665e;
+     font-size: 15px;
+     line-height: 24px;
+}
+
 .main_form .contactus {
      border: #fff solid 1px;
      padding: 0 15px;
