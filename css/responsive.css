@@ -82,6 +82,25 @@
         font-size: 43px;
         line-height: 46px;
     }
+    .static_hero {
+        min-height: 360px;
+    }
+    .static_hero_content {
+        gap: 32px;
+        padding: 48px 24px;
+    }
+    .hero-logo {
+        flex-basis: 210px;
+        width: 210px;
+        height: 210px;
+    }
+    .static_hero_content h1 {
+        font-size: 42px;
+    }
+    .static_hero_content p {
+        font-size: 17px;
+        line-height: 26px;
+    }
     .bann_img {
         height: 330px;
     }
@@ -110,7 +129,7 @@
         max-width: 690px;
     }
     .pricing_box {
-        padding: 58px 18px 70px 18px;
+        padding: 48px 18px 56px 18px;
     }
     .variat {
         padding-right: 20px;
@@ -119,7 +138,7 @@
         display: block;
     }
     .pricing_box_ti h3 {
-        font-size: 39px;
+        font-size: 34px;
     }
     .footer h3 {
         font-size: 16px;
@@ -210,6 +229,29 @@
 }
 
 @media (max-width: 767px) {
+    .static_hero {
+        min-height: 0;
+    }
+    .static_hero_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .hero-logo {
+        flex: 0 0 180px;
+        width: 180px;
+        height: 180px;
+    }
+    .static_hero_content h1 {
+        margin-bottom: 14px;
+        font-size: 34px;
+    }
+    .static_hero_content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
     .navigation.navbar-dark .navbar-nav .nav-link:focus,
     .navigation.navbar-dark .navbar-nav .nav-link:hover,
     .navigation.navbar-dark .navbar-nav .active > .nav-link,
@@ -222,35 +264,37 @@
 
 @media (max-width: 575px) {
     .static_hero {
-        min-height: 360px;
+        min-height: 0;
     }
     .static_hero_content {
         flex-direction: column;
         align-items: center;
-        gap: 24px;
-        padding: 54px 18px;
+        gap: 16px;
+        padding: 34px 18px;
         text-align: center;
     }
     .hero-logo {
-        width: 190px;
-        height: 190px;
+        flex: 0 0 150px;
+        width: 150px;
+        height: 150px;
     }
     .static_hero_content h1 {
-        font-size: 40px;
+        margin-bottom: 12px;
+        font-size: 30px;
     }
     .static_hero_content p {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 15px;
+        line-height: 23px;
     }
     .about_section {
-        padding: 68px 0;
+        padding: 56px 0;
     }
     .about_copy {
         margin-bottom: 34px;
-        padding: 30px 24px;
+        padding: 24px 20px;
     }
     .about_copy h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .about_map {
         height: 520px;
@@ -337,10 +381,10 @@
         max-width: inherit;
     }
     .titlepage h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .pricing_box {
-        padding: 58px 18px 70px 18px;
+        padding: 48px 16px 56px 16px;
     }
     .about_img {
         margin-right: 0px;

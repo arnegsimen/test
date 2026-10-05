@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
@@ -118,7 +119,10 @@
                </div>
                <div class="col-md-6">
                   <div class="about_map">
-                     <iframe src="https://www.google.com/maps?q=Ingvald+Ludvigsens+gate+14,+3027+Drammen,+Norway&amp;output=embed" title="Kart til Mulighetsrommet Muskler og Ledd" loading="lazy"></iframe>
+                     <div class="location-map" role="region" aria-label="Kart til Mulighetsrommet Muskler og Ledd" data-lat="59.7524501" data-lon="10.1283803">
+                        <a class="map_fallback" href="https://www.google.com/maps/search/?api=1&amp;query=Ingvald+Ludvigsens+gate+14%2C+3027+Drammen" target="_blank" rel="noopener noreferrer">Åpne kart i Google Maps</a>
+                     </div>
+                     <a class="map-open-link" href="https://www.google.com/maps/search/?api=1&amp;query=Ingvald+Ludvigsens+gate+14%2C+3027+Drammen" target="_blank" rel="noopener noreferrer">Åpne i Google Maps</a>
                   </div>
                </div>
             </div>
@@ -283,23 +287,19 @@
                <div class="row">
                   <div class="col-md-12 footer-contact-wrap">
                      <ul class="conta footer-contact">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ingvald Ludvigsens gate 14, 3027 Drammen</li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> Tlf.: 959 43 215</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:elinarnegard@yahoo.no">elinarnegard@yahoo.no</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i><span class="footer-contact-copy"><span class="footer-contact-label">Besøk oss</span>Ingvald Ludvigsens gate 14, 3027 Drammen</span></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i><span class="footer-contact-copy"><span class="footer-contact-label">Ring oss</span><a href="tel:+4795943215">959 43 215</a></span></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><span class="footer-contact-copy"><span class="footer-contact-label">Send e-post</span><a href="mailto:elinarnegard@yahoo.no">elinarnegard@yahoo.no</a></span></li>
                      </ul>
                   </div>
                </div>
                <div class="row footer-columns">
-                  <div class="footer-column">
-                     <h3>Om oss</h3>
-                     <p class="variat">Et lite og hyggelig studio for massasje, hvile og ny kontakt med kroppen.</p>
-                  </div>
-                  <div class="footer-column">
+                  <div class="footer-column footer-brand">
                      <h3>Mulighetsrommet Muskler &amp; Ledd</h3>
-                     <p class="variat">Kom inn for faglig, uforstyrret kroppsbehandling og gå herfra med litt mer bevegelsesfrihet.</p>
+                     <p class="variat">Et rolig studio for massasje, hvile og behandling tilpasset deg.</p>
                   </div>
-                  <div class="footer-column">
-                     <h3>Nyttige lenker</h3>
+                  <nav class="footer-column footer-nav" aria-label="Bunnmeny">
+                     <h3>Utforsk</h3>
                      <ul class="link_menu">
                         <li><a href="index.html">Hjem</a></li>
                         <li class="active"><a href="about.html">Om oss</a></li>
@@ -307,7 +307,7 @@
                         <li><a href="pricing.html">Priser</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                      </ul>
-                  </div>
+                  </nav>
                </div>
             </div>
             <div class="copyright">
@@ -329,6 +329,8 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="js/location-map.js"></script>
    </body>
 </html>
 
