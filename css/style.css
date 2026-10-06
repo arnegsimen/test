@@ -389,14 +389,14 @@ ul.social_icon li a:hover {
 
 .static_hero_content h1 {
      margin-bottom: 18px;
-     color: #fffdf8;
+     color: var(--moss);
      font-size: 48px;
      line-height: 1.08;
 }
 
 .static_hero_content p {
      max-width: 620px;
-     color: #fffdf8;
+     color: var(--moss);
      font-size: 18px;
      line-height: 28px;
 }
@@ -1427,10 +1427,6 @@ ul.link_menu li a:hover {
     }
 }
 
-.about-page .back_re {
-     border-bottom: 5px solid #6f8749;
-}
-
 .about-page {
      background: #f6f3ea;
 }
@@ -1765,11 +1761,11 @@ ul.conta li a,
      opacity: .92;
 }
 
-/* Keep the static home hero dark moss green after the legacy theme rules. */
+/* Keep the hero and page-title banners on the beige canvas. */
 .banner_main.static_hero,
 .banner_main.static_hero::before {
-     background: #435a32 !important;
-     background-color: #435a32 !important;
+     background: var(--page) !important;
+     background-color: var(--page) !important;
 }
 
 .banner_main.static_hero::before {
@@ -1816,6 +1812,27 @@ h6,
 .contact_intro i,
 .pricing_box_ti h3 span {
      color: #435a32;
+}
+
+.header {
+     background: var(--moss);
+     background-color: var(--moss);
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     color: var(--page);
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:hover,
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active {
+     color: var(--moss);
+     background-color: var(--page);
+}
+
+.header ul.social_icon li a {
+     color: var(--moss);
+     background-color: var(--page);
 }
 
 .we_box i,
@@ -1868,12 +1885,12 @@ h6,
 }
 
 .back_re {
-    background: #435a32 !important;
-    background-color: #435a32 !important;
+     background: var(--page) !important;
+     background-color: var(--page) !important;
 }
 
 .back_re .title h2 {
-    color: #ffffff;
+     color: var(--moss);
 }
 
 .pricing-page .back_re .title h2 {
@@ -2223,20 +2240,34 @@ h6,
 }
 
 .contact-page .header {
-     background: var(--page) !important;
-     background-color: var(--page) !important;
+     background: var(--moss) !important;
+     background-color: var(--moss) !important;
 }
 
 .contact-page .header .navigation.navbar-dark .navbar-nav .nav-link,
-.contact-page .header .navigation.navbar-dark .navbar-nav .nav-link:hover,
-.contact-page .header .navigation.navbar-dark .navbar-nav .active > .nav-link {
-     color: var(--ink);
+     color: var(--page);
      background: transparent;
 }
 
+.contact-page .header .navigation.navbar-dark .navbar-nav .nav-link:hover,
+.contact-page .header .navigation.navbar-dark .navbar-nav .active > .nav-link {
+     color: var(--moss);
+     background: var(--page);
+}
+
+.contact-page .header .navigation.navbar-dark .nav-link.active {
+     color: var(--moss);
+     background: var(--page);
+}
+
 .contact-page .header ul.social_icon li a {
-     color: #fff;
-     background: var(--moss);
+     color: var(--moss);
+     background: var(--page);
+}
+
+.contact-page .header .navigation.navbar-dark .navbar-nav .nav-link:focus {
+     color: var(--page);
+     background: transparent;
 }
 
 .contact-page .header .navigation.navbar-dark .navbar-toggler {
@@ -2252,12 +2283,12 @@ h6,
 }
 
 .contact-page .back_re {
-     background: var(--moss) !important;
-     background-color: var(--moss) !important;
+     background: var(--page) !important;
+     background-color: var(--page) !important;
 }
 
 .contact-page .back_re .title h2 {
-     color: #fffdf8;
+     color: var(--moss);
 }
 
 .contact-page .contact_intro {
